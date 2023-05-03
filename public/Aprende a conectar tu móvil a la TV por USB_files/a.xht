@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<html xmlns="http://www.w3.org/1999/xhtml" data-l10n-sync="true" dir="ltr" lang="es-ES">
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'" />
+    <meta name="color-scheme" content="light dark" />
+    <title data-l10n-id="neterror-page-title">Problema al cargar la página</title>
+    <link rel="stylesheet" href="chrome://global/skin/aboutNetError.css" type="text/css" media="all" />
+    <link rel="icon" id="favicon" href="chrome://global/skin/icons/warning.svg" />
+    <link rel="localization" href="branding/brand.ftl" />
+    <link rel="localization" href="toolkit/neterror/certError.ftl" />
+    <link rel="localization" href="toolkit/neterror/netError.ftl" />
+  </head>
+
+  <body class="neterror">
+    <!-- PAGE CONTAINER (for styling purposes only) -->
+    <div class="container">
+      <div id="text-container">
+        <!-- Error Title -->
+        <div class="title">
+          <h1 class="title-text" data-l10n-id="nssFailure2-title">Conexión segura fallida</h1>
+        </div>
+
+        <!-- Short Description -->
+        <p id="errorShortDesc" data-l10n-args="{&quot;errorMessage&quot;:&quot;SSL ha recibido un registro que excedía la longitud máxima permitida.&quot;,&quot;hostname&quot;:&quot;open.spotify.com&quot;}" data-l10n-id="cert-error-ssl-connection-error">Ha ocurrido un error al conectar con open.spotify.com. SSL ha recibido un registro que excedía la longitud máxima permitida.</p>
+        <p id="errorShortDesc2" data-l10n-args="{&quot;error&quot;:&quot;SSL_ERROR_RX_RECORD_TOO_LONG&quot;}" data-l10n-id="cert-error-code-prefix">Código de error: SSL_ERROR_RX_RECORD_TOO_LONG</p>
+
+        <div id="errorWhatToDo" hidden="">
+          <p id="errorWhatToDoTitle" data-l10n-id="certerror-what-can-you-do-about-it-title">¿Qué puede hacer al respecto?</p>
+          <p id="badStsCertExplanation" hidden=""></p>
+          <p id="errorWhatToDoText"></p>
+        </div>
+
+        <!-- Long Description -->
+        <div id="errorLongDesc"><ul><li data-l10n-id="neterror-nss-failure-not-verified">La página que está intentando ver no se puede mostrar porque la autenticidad de los datos recibidos no ha podido ser verificada.</li><li data-l10n-id="neterror-nss-failure-contact-website">Contacte con los propietarios del sitio web para informarles de este problema.</li></ul></div>
+
+        <p id="trrOnlyContainer" hidden="">
+          <p id="trrOnlyMessage"></p>
+          <div class="trr-message-container">
+            <span id="trrOnlyDescription"></span>
+            <p id="trrLearnMoreContainer" hidden="">
+              <a id="trrOnlylearnMoreLink" target="_blank" rel="noopener noreferrer" data-l10n-id="neterror-learn-more-link">Más información…</a>
+            </p>
+          </div>
+          <p data-l10n-id="neterror-dns-not-found-trr-third-party-warning">Se
+ puede continuar con un servicio de DNS que no sea seguro. Sin embargo, 
+un tercero podría ser capaz de ver los sitios web que se visite.</p>
+        </p>
+
+        <p id="nativeFallbackContainer" hidden="">
+          <p id="nativeFallbackMessage"></p>
+          <div class="native-fallback-message-container">
+            <span id="nativeFallbackDescription"></span>
+            <p id="nativeFallbackLearnMoreContainer" hidden="">
+              <a id="nativeFallbackLearnMoreLink" target="_blank" rel="noopener noreferrer" data-l10n-id="neterror-learn-more-link">Más información…</a>
+            </p>
+          </div>
+          <p data-l10n-id="neterror-dns-not-found-trr-third-party-warning">Se
+ puede continuar con un servicio de DNS que no sea seguro. Sin embargo, 
+un tercero podría ser capaz de ver los sitios web que se visite.</p>
+        </p>
+
+        <p id="tlsVersionNotice" hidden=""></p>
+
+        <p id="learnMoreContainer">
+          <a id="learnMoreLink" target="_blank" rel="noopener noreferrer" data-telemetry-id="learn_more_link" data-l10n-id="neterror-learn-more-link" href="https://support.mozilla.org/1/firefox/112.0.1/WINNT/es-ES/connection-not-secure">Más información…</a>
+        </p>
+
+        <div id="openInNewWindowContainer" class="button-container" hidden="">
+          <p><a id="openInNewWindowButton" target="_blank" rel="noopener noreferrer">
+          <button class="primary" data-l10n-id="open-in-new-window-for-csp-or-xfo-error">Abrir sitio en una nueva ventana</button></a></p>
+        </div>
+
+        <!-- UI for option to report certificate errors to Mozilla. Removed on
+             init for other error types .-->
+        <div id="prefChangeContainer" class="button-container" hidden="">
+          <p data-l10n-id="neterror-pref-reset">Parece que su configuración de seguridad de red podría estar causando esto. ¿Quiere restaurar la configuración predeterminada?</p>
+          <button id="prefResetButton" class="primary" data-l10n-id="neterror-pref-reset-button">Restablecer configuración predeterminada</button>
+        </div>
+
+        <div id="certErrorAndCaptivePortalButtonContainer" class="button-container" hidden="">
+          <button id="returnButton" class="primary" data-telemetry-id="return_button_top" data-l10n-id="neterror-return-to-previous-page-recommended-button">Retroceder (recomendado)</button>
+          <button id="openPortalLoginPageButton" class="primary" data-l10n-id="neterror-open-portal-login-page-button" hidden="">Abrir página de inicio de sesión en la red</button>
+          <button id="certErrorTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" hidden="">Reintentar</button>
+          <button id="advancedButton" data-telemetry-id="advanced_button" data-l10n-id="neterror-advanced-button">Avanzado…</button>
+        </div>
+      </div>
+
+      <div id="netErrorButtonContainer" class="button-container">
+        <button class="primary try-again" data-l10n-id="neterror-try-again-button">Reintentar</button>
+        <button id="trrExceptionButton" data-l10n-id="neterror-add-exception-button" hidden="">Continuar siempre para este sitio</button>
+        <button id="trrSettingsButton" data-l10n-id="neterror-settings-button" hidden="">Cambiar la configuración de DNS</button>
+        <button id="nativeFallbackIgnoreButton" data-l10n-id="neterror-disable-native-feedback-warning" hidden="">Continuar siempre</button>
+      </div>
+
+      <div class="advanced-panel-container">
+        <div id="badCertAdvancedPanel" class="advanced-panel" hidden="">
+          <p id="badCertTechnicalInfo"></p>
+          <a id="viewCertificate" href="javascript:void(0)" data-l10n-id="neterror-view-certificate-link">Ver certificado</a>
+          <div id="advancedPanelButtonContainer" class="button-container">
+            <button id="advancedPanelReturnButton" class="primary" data-telemetry-id="return_button_adv" data-l10n-id="neterror-return-to-previous-page-recommended-button">Retroceder (recomendado)</button>
+            <button id="advancedPanelTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" hidden="">Reintentar</button>
+            <button id="exceptionDialogButton" data-telemetry-id="exception_button" data-l10n-id="neterror-override-exception-button">Aceptar el riesgo y continuar</button>
+          </div>
+        </div>
+
+        <div id="blockingErrorReporting" class="advanced-panel" hidden="">
+          <p class="toggle-container-with-text">
+            <input type="checkbox" id="automaticallyReportBlockingInFuture" role="checkbox" />
+            <label for="automaticallyReportBlockingInFuture" data-l10n-id="neterror-error-reporting-automatic">Informar de errores como esto ayuda a Mozilla a identificar y bloquear sitios maliciosos</label>
+          </p>
+        </div>
+
+        <div id="certificateErrorDebugInformation" class="advanced-panel" hidden="">
+          <button id="copyToClipboardTop" data-telemetry-id="clipboard_button_top" data-l10n-id="neterror-copy-to-clipboard-button">Copiar texto al portapapeles</button>
+          <div id="certificateErrorText"></div>
+          <button id="copyToClipboardBottom" data-telemetry-id="clipboard_button_bot" data-l10n-id="neterror-copy-to-clipboard-button">Copiar texto al portapapeles</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="chrome://global/content/neterror/aboutNetErrorCodes.js"></script>
+  <script type="module" src="chrome://global/content/aboutNetError.mjs"></script>
+</html>

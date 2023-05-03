@@ -1,0 +1,214 @@
+[
+    {
+        "id": 1,
+        "name": "Matematica",
+        "img": "/img/mathCourse_image.webp",
+        "price": 850,
+        "questions": [
+            {
+                "id": 1,
+                "text": "8 / 2 (2 + 2)",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": 16,
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": 1,
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": 25,
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": 17,
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "6 * 3 - 15",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": 21,
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": 5,
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": 3,
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": 34,
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Espanol",
+        "img": "/img/spanishCourse_image.png",
+        "price": 600,
+        "questions": [
+            {
+                "id": 1,
+                "text": "Cual es un pronombre?",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "o",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "y",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "es",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "de",
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Historia",
+        "img": "/img/historyCourseImage.png",
+        "price": 300,
+        "questions": [
+            {
+                "id": 1,
+                "text": "En que ano fue la primera Guerra Mundial?",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": 1997,
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": 1869,
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": 1986,
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": 1914,
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Biologia",
+        "img": "/img/biologyCourseImage.png",
+        "price": 700,
+        "questions": [
+            {
+                "id": 1,
+                "text": "El perro es un: ",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": "Mamifero",
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": "Reptil",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": "Insecto",
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": "Otro",
+                        "isCorrect": false
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "Cuantos organos tiene el cuerpo humano?",
+                "options": [
+                    {
+                        "id": 1,
+                        "label": "A",
+                        "text": 21,
+                        "isCorrect": true
+                    },
+                    {
+                        "id": 2,
+                        "label": "B",
+                        "text": 78,
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 3,
+                        "label": "C",
+                        "text": 25,
+                        "isCorrect": false
+                    },
+                    {
+                        "id": 4,
+                        "label": "D",
+                        "text": 82,
+                        "isCorrect": false
+                    }
+                ]
+            }
+        ]
+    }
+]
