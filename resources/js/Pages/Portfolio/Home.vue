@@ -12,7 +12,7 @@ import { Head } from '@inertiajs/inertia-vue3';
     <!-- Info -->
     <div class="flex-wrap md:flex">
       <div class="mx-auto">
-        <img class="mx-auto mt-12 h-52 w-52 rounded-lg border p-2 md:mt-0" src="https://w7.pngwing.com/pngs/146/551/png-transparent-user-login-mobile-phones-password-user-miscellaneous-blue-text-thumbnail.png" alt="step" />
+        <img class="mx-auto mt-12 h-52 w-52 rounded-lg border p-2 md:mt-0" src="../../../../public/img/icons8-usuario-512.png" alt="step" />
         <div>
           <h1 class="font-laonoto mt-4 text-center text-xl font-bold">Javier Lopez Requejo</h1>
           <p class="mt-2 text-center font-semibold text-gray-600">Ingeniero en Ciencias Informaticas</p>
@@ -22,16 +22,16 @@ import { Head } from '@inertiajs/inertia-vue3';
         <div class="mx-auto w-52">
           <div class="m-4">
             <div class="flex w-full items-center justify-center">
-              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="https://logospng.org/download/laravel/logo-laravel-icon-1024.png" alt="Error ..." />
-              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="https://logospng.org/download/vue.js/vue-js-4096.png" alt="Error ..." />
-              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="https://logos-world.net/wp-content/uploads/2021/11/Unity-Emblem.png" alt="Error ..." />
-              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/2048px-Godot_icon.svg.png" alt="Error ..." />
+              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="../../../../public/img/icons8-laravel-96.png" alt="Error ..." />
+              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="../../../../public/img/icons8-vue-js-96.png" alt="Error ..." />
+              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="../../../../public/img/icons8-unidad-100.png" alt="Error ..." />
+              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="../../../../public/img/godot.png" alt="Error ..." />
             </div>
             <div class="flex w-full items-center justify-center mt-1">
-              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="Error ..." />
-              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="https://blog.getbootstrap.com/assets/brand/bootstrap-logo-shadow.png" alt="Error ..." />
-              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="https://logospng.org/download/android/logo-android-4096.png" alt="Error ..." />
-              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png" alt="Error ..."/>
+              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="../../../../public/img/icons8-visual-studio-code-2019-96.png" alt="Error ..." />
+              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="../../../../public/img/icons8-oreja-96.png" alt="Error ..." />
+              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="../../../../public/img/icons8-android-os-96.png" alt="Error ..." />
+              <img class="mx-auto h-12 w-12 rounded-lg border p-2 md:mt-0 mr-1" src="../../../../public/img/icons8-tailwind-css-96.png" alt="Error ..."/>
             </div>
           </div>
         </div>
@@ -88,16 +88,22 @@ import { Head } from '@inertiajs/inertia-vue3';
             <h2 class="title-font mb-1 text-xl font-black tracking-wider text-gray-900">Proyectos</h2>
             <p class="font-laonoto leading-relaxed">
               <a href="https://apklis.cu/applications?search=pentandra" class="text-miazul-100 hover:text-miazul-300 font-bold">Videojuegos - Apklis.cu</a><br>
-              <a href="" class="text-miazul-100 hover:text-miazul-300 font-bold">Portafolio Personal</a>
+              <a href="" class="text-miazul-100 hover:text-miazul-300 font-bold">Portafolio Personal</a><br>
+              <a href="https://github.com/aplay5522/TestProject" class="text-miazul-100 hover:text-miazul-300 font-bold">TestProject (GitHub)</a>
             </p>
           </div>
         </div>
 
         <div class="container mx-auto text-center border-2 border-dashed border-sky-900 p-2">
             <p class="border-b mb-2">Pentandra Games</p>
-            <a href="https://mobile.twitter.com/pentandragames" class="flex justify-center">
-              <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Error ..." class="h-6 w-6 rounded">
-            </a>
+            <div class="flex justify-center">
+              <a href="https://mobile.twitter.com/pentandragames" class="flex justify-center">
+                <img src="../../../../public/img/icons8-twitter-96.png" alt="Error ..." class="h-6 w-6 rounded">
+              </a>
+              <a href="https://github.com/aplay5522/aplay5522" class="flex justify-center">
+                <img src="../../../../public/img/icons8-github-100.png" alt="Error ..." class="h-6 w-6 rounded">
+              </a>
+            </div>
         </div>
 
       </div>
